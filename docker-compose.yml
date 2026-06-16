@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: tienda_app
+    restart: unless-stopped
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://caboose.proxy.rlwy.net:28388/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: bZHOLYdXVcUahtruCFlbecdkGCXvuWij
+    ports:
+      - "8080:8080"

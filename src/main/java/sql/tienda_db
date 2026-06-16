@@ -1,0 +1,2 @@
+CREATE DATABASE tienda_db;
+USE tienda_db;
